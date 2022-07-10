@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Clock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+
+        #div1{
+            color:rgb(7, 55, 4);
+            text-align: center;
+        }
+    </style>
+</head>
+  <body>
+    <div id="div1">
+        <h1>Clock</h1>
+    </div>
+
+   
+
+      
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Current Time is : </h1>
+          <p id="time"></p>
+          <p class="col-md-8 fs-4">We are here to display real time time and date.
+            
+          </p>
+         
+
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+
+  <script>
+    let daT;
+    let g;
+    let d;
+    setInterval(()=>{
+        daT = new Date();
+        d= daT.toDateString();
+        g= daT.toLocaleTimeString();
+
+
+        document.getElementById("time").innerHTML="<h2>" + g + "<br> on <br>" + d + " </h2>";
+    },1000);
+
+
+  </script>
+</html>
