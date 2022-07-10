@@ -1,0 +1,17 @@
+body{
+    background-color: #333232;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+#container{
+    background-color: #0E2431;
+    border: 5px solid #f5eac3;
+    height: 275px;
+    width: 750px;
+    margin:auto;
+    text-align: center;
+    color:aliceblue
+}
